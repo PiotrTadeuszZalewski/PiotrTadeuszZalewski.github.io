@@ -1,0 +1,27 @@
+---
+title: "Developing Data Products - plotly"
+author: "Piotr Zalewski"
+date: "11/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sample 3D Plot
+
+
+```{r, comment="", message=FALSE, echo=FALSE}
+library(plotly)
+library(datasets)
+data(mtcars)
+mtcars %>%
+  plot_ly(x = ~wt,
+          y = ~mpg,
+          z = ~hp,
+          color = ~disp,
+          colors = "Oranges",
+          type = "scatter3d",
+          mode = "markers")
+```
