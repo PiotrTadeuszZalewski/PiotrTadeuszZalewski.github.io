@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Five major cities in United Arab Emirates.
 
-```{r, comment="", message=FALSE}
+```{r, comment="", message=FALSE, echo=FALSE}
 library(leaflet)
 UAEcities <- data.frame(
-  name = c("Ras Al-Khaimah","Al Ain","Sharjah","Abu Dhabi","Dubai"),
-  pop = c(345000,614180,800000,1480000,2921376),
+  name = c("Ras Al-Khaimah", "Al Ain", "Sharjah", "Abu Dhabi", "Dubai"),
+  pop = c(345000, 614180, 800000, 1480000, 2921376),
   lat = c(25.800694, 24.207500, 25.348766, 24.466667, 25.276987),
   lng = c(55.976200, 55.744720, 55.405403, 54.366669, 55.296249))
 UAEcities %>%

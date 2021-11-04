@@ -182,19 +182,8 @@ pre code {
 <div id="uae-cities" class="section level2">
 <h2>UAE Cities</h2>
 <p>Five major cities in United Arab Emirates.</p>
-<pre class="r"><code>library(leaflet)
-UAEcities &lt;- data.frame(
-  name = c(&quot;Ras Al-Khaimah&quot;,&quot;Al Ain&quot;,&quot;Sharjah&quot;,&quot;Abu Dhabi&quot;,&quot;Dubai&quot;),
-  pop = c(345000,614180,800000,1480000,2921376),
-  lat = c(25.800694, 24.207500, 25.348766, 24.466667, 25.276987),
-  lng = c(55.976200, 55.744720, 55.405403, 54.366669, 55.296249))
-UAEcities %&gt;%
-  leaflet() %&gt;% 
-  addTiles() %&gt;%
-  addCircles(weight = 2, radius = UAEcities$pop / 100) %&gt;%
-  addPopups(popup=UAEcities$name)</code></pre>
-<div id="htmlwidget-c3bb4258183755b12567" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c3bb4258183755b12567">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircles","args":[[25.800694,24.2075,25.348766,24.466667,25.276987],[55.9762,55.74472,55.405403,54.366669,55.296249],[3450,6141.8,8000,14800,29213.76],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]},{"method":"addPopups","args":[[25.800694,24.2075,25.348766,24.466667,25.276987],[55.9762,55.74472,55.405403,54.366669,55.296249],["Ras Al-Khaimah","Al Ain","Sharjah","Abu Dhabi","Dubai"],null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"limits":{"lat":[24.2075,25.800694],"lng":[54.366669,55.9762]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fbb3af0e081cef2360ef" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fbb3af0e081cef2360ef">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircles","args":[[25.800694,24.2075,25.348766,24.466667,25.276987],[55.9762,55.74472,55.405403,54.366669,55.296249],[3450,6141.8,8000,14800,29213.76],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]},{"method":"addPopups","args":[[25.800694,24.2075,25.348766,24.466667,25.276987],[55.9762,55.74472,55.405403,54.366669,55.296249],["Ras Al-Khaimah","Al Ain","Sharjah","Abu Dhabi","Dubai"],null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"limits":{"lat":[24.2075,25.800694],"lng":[54.366669,55.9762]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
